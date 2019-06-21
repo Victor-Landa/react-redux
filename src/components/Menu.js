@@ -1,9 +1,14 @@
 import React from 'react';
 
 const Menu = (props) => (
-    <div>
-
-    </div>
+    <nav>
+        <a>
+            Usuarios
+        </a>
+        <a>
+            Tareas
+        </a>
+    </nav>
 )
 
 export default Menu;
