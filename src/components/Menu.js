@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Menu = (props) => (
-    <nav>
-        <a>
+    <nav id="menu">
+        <a href="">
             Usuarios
         </a>
-        <a>
+        <a href="">
             Tareas
         </a>
     </nav>
