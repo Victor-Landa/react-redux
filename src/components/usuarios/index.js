@@ -35,7 +35,7 @@ class Usuarios extends Component {
 
   render(){
     return (
-      <div className="margen">
+      <div>
         <table className="tabla">
           <thead>
             <tr>
