@@ -6,12 +6,16 @@ import App from './components/App';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
+import reducers from './reducers';
+
 const store = createStore(
-    {}, // All Reducers
+    reducers, // All Reducers
     {} // Estado Inicial
 )
 
 ReactDOM.render(
-    <App />, 
+    <Provider store={ store }>
+        <App />
+    </Provider>, 
     document.getElementById('root')
 );
