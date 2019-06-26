@@ -20,9 +20,16 @@ export const traerPorUsuarios = (key) => async (dispatch, getState) => {
         const respuesta = await axios.get(`https://jsonplaceholder.typicode.com/posts?userId=${usuario_id}`);
 
 
+        const nuevas = respuesta.data.map((publicacion) => ({
+            ...publicacion,
+            comentarios: [],
+            abierto: false
+        }))
+
+
         const publicaciones_actualizadas = [
             ...publicaciones,
-            respuesta.data
+            nuevas
         ];
         
         dispatch({
@@ -50,4 +57,9 @@ export const traerPorUsuarios = (key) => async (dispatch, getState) => {
         })
     }
 
+}
+
+
+export const abrirCerrar = (pub_key, com_key) => (dispatch) => {
+    console.log(pub_key, com_key)
 }
