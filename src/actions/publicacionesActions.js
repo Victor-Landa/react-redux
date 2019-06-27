@@ -79,6 +79,9 @@ export const abrirCerrar = (pub_key, com_key) => (dispatch, getState) => {
         type: ACTUALIZAR,
         payload: publicaciones_actualizadas
     })
+}
 
-    
+// Aquí vamos a ir a buscar nuestros comentarios para luego ponerlos en donde corresponden
+export const traerComentarios = (pub_key, com_key) => (dispatch, getState) => {
+
 }
