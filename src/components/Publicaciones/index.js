@@ -118,7 +118,10 @@ class Publicaciones extends Component{
 
     mostrarComentarios = (pub_key, com_key, comentarios) => {
         this.props.abrirCerrar(pub_key, com_key);
-        this.props.traerComentarios(pub_key, com_key);
+        // Si comentarios.length no tiene nada entonces voy a ir a buscar los comentarios.
+        if(!comentarios.length){
+            this.props.traerComentarios(pub_key, com_key);
+        }
     }
 
     render(){
