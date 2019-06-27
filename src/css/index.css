@@ -41,4 +41,15 @@
 
   .pub_titulo{
     border-top: 1px solid black;
+    cursor: pointer;
+  }
+
+  li{
+    margin: 15px 0 15px 0
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+  body{
+    font-family: 'Roboto', sans-serif;
   }

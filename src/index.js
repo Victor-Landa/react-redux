@@ -10,6 +10,7 @@ import reduxThunk from 'redux-thunk';
 
 import reducers from './reducers';
 
+
 const store = createStore(
     reducers, // All Reducers
     {}, // Estado Inicial

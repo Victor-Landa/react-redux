@@ -5,12 +5,12 @@ import Fatal from '../general/Fatal';
 
 
 const Comentarios = (props) => {
-    if(props.cargando){
-        return <Spinner />
+    if(props.com_error){
+        return <Fatal mensaje={ props.com_error } />
     }
-
-    if(props.error){
-        return <Fatal mensaje={ props.error } />
+    
+    if(props.com_cargando && !props.comentarios.length){
+        return <Spinner />
     }
 
     const ponerComentarios = () => (
