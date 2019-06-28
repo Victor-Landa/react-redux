@@ -9,7 +9,7 @@ export const traerTodas = () => async (dispatch) => {
 
     try{
         const respuesta = await axios.get('https://jsonplaceholder.typicode.com/todos');
-        
+
         const tareas = {};
 
         respuesta.data.map((tar) => (
