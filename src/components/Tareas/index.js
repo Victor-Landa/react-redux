@@ -49,6 +49,14 @@ class Tareas extends Component{
                 {
                     por_usuario[tar_id].title
                 }
+                <button className="m-left">
+                    <Link to={`/tareas/guardar/${usu_id}/${tar_id}`}>
+                        Editar
+                    </Link>
+                </button>
+                <button className="m-left">
+                    Eliminar
+                </button>
             </div>
         ));
     }
